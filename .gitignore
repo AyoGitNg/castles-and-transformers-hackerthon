@@ -1,0 +1,88 @@
+.idea
+Q1/.idea
+Q1/build
+Q1/.gradle
+
+/tmp
+
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+Q2Angular/dist
+Q2Angular/tmp
+Q2Angular/out-tsc
+# Only exists if Bazel was run
+Q2Angular/bazel-out
+
+# dependencies
+Q2Angular/node_modules
+
+# profiling files
+Q2Angular/chrome-profiler-events*.json
+Q2Angular/speed-measure-plugin*.json
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+yarn-error.log
+testem.log
+/typings
+
+# System Files
+.DS_Store
+Thumbs.db
+
+HELP.md
+.gradle
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### STS ###
+.apt_generated
+Q2SpringBoot/.classpath
+.factorypath
+Q2SpringBoot/.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+Q2SpringBoot/.idea
+Q2SpringBoot/*.iws
+Q2SpringBoot/*.iml
+Q2SpringBoot/*.ipr
+Q2SpringBoot/out/
+Q2SpringBoot/!**/src/main/**/out/
+Q2SpringBoot/!**/src/test/**/out/
+
+### NetBeans ###
+Q2SpringBoot/nbproject/private/
+Q2SpringBoot/nbbuild/
+Q2SpringBoot/dist/
+Q2SpringBoot/nbdist/
+Q2SpringBoot/.nb-gradle/
+
+### VS Code ###
+Q2SpringBoot/.vscode/
