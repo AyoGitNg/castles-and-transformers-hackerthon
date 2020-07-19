@@ -1,0 +1,20 @@
+.transformer-form {
+  margin: 10px;
+  padding: 10px;
+  width: 40%;
+}
+
+.transformer-form-element {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.transformer-form-element input {
+  margin-left: 20%;
+  width: 60%;
+  float: right;
+}
+
+.transformer-form-element label {
+  width: 30%;
+}

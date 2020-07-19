@@ -74,10 +74,12 @@ public class Battle {
             maxBattles--;
         }
 
+        battleResult.setNumberOfBattles(numberOfFights);
+
         if (autoBots.size() == 0 && decepticons.size() == 0) {
             return battleResult;
         }else {
-            battleResult.setNumberOfBattles(numberOfFights);
+
             if(decepticons.size() > autoBots.size()) {
                 battleResult.setSurvivors(null);
                 battleResult.setWinnerTeam("Decepticons");

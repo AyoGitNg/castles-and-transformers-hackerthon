@@ -1,15 +1,13 @@
 <div>
 
   <p>Decepticons</p>
-  <div *ngFor="let deception of deceptions">
-      <div>
-          <p>{{deception.name}} || {{deception.courage}} || {{deception.strength}}</p>
-      </div>
+  <div *ngFor="let decepticon of decepticons">
+    <div>
+      <p>{{decepticon.name}} || {{decepticon.courage}} || {{decepticon.strength}}</p>
+    </div>
   </div>
-  <div *ngIf="showNewDeception">
 
-  </div>
-  <button (click)="">Add new Deception</button>
+  <button (click)="newDeception()">Add new Deception</button>
 
   <p>AutoBot</p>
   <div *ngFor="let autobot of autoBots">
@@ -17,16 +15,16 @@
       <p>{{autobot.name}} || {{autobot.courage}} || {{autobot.strength}}</p>
     </div>
   </div>
-  <button>Add new AutoBot</button>
+  <button (click)="newAutoBots()">Add new AutoBot</button>
 
-  <button> Fight </button>
+  <button (click)="fight()"> Fight</button>
 
   <div>
     <p>Result</p>
 
-    <p>Number of battles </p>
-    <p>Winning Team </p>
-    <p>Survivors </p>
+    <p>Number of battles {{numberOfBattles}}</p>
+    <p>Winning Team {{winnerTeam}} </p>
+    <p>Survivors {{survivors}} </p>
 
   </div>
 

@@ -1,0 +1,57 @@
+<form #transformerForm="ngForm" class="transformer-form" (ngSubmit)="onSubmit(transformerForm)">
+  <div class="transformer-form-element">
+    <label for="name">Name *</label>
+    <input type="text" name="name" required id="name" [(ngModel)]="transformer.name">
+  </div>
+
+  <div class="transformer-form-element">
+    <label for="type">Type *</label>
+    <input type="text" name="type" required id="type" [(ngModel)]="transformer.type">
+  </div>
+
+  <div class="transformer-form-element">
+    <label for="strength">Strength *</label>
+    <input type="number" name="strength" required id="strength" [(ngModel)]="transformer.strength" min="1" max="10">
+  </div>
+
+  <div class="transformer-form-element">
+    <label for="intelligence">Intelligence *</label>
+    <input type="number" name="intelligence" required id="intelligence" [(ngModel)]="transformer.intelligence" min="1"
+           max="10">
+  </div>
+
+  <div class="transformer-form-element">
+    <label for="speed">Speed *</label>
+    <input type="number" name="speed" required id="speed" [(ngModel)]="transformer.speed" min="1" max="10">
+  </div>
+
+  <div class="transformer-form-element">
+    <label for="endurance">Endurance *</label>
+    <input type="number" name="endurance" required id="endurance" [(ngModel)]="transformer.endurance" min="1" max="10">
+  </div>
+
+  <div class="transformer-form-element">
+    <label for="rank">Rank *</label>
+    <input type="number" name="rank" required id="rank" [(ngModel)]="transformer.rank" min="1" max="10">
+  </div>
+
+  <div class="transformer-form-element">
+    <label for="courage">Courage *</label>
+    <input type="number" name="courage" required id="courage" [(ngModel)]="transformer.courage" min="1" max="10">
+  </div>
+
+  <div class="transformer-form-element">
+    <label for="firepower">Firepower *</label>
+    <input type="number" name="firepower" required id="firepower" [(ngModel)]="transformer.firepower" min="1" max="10">
+  </div>
+
+  <div class="transformer-form-element">
+    <label for="skill">Skill *</label>
+    <input type="number" name="skill" required id="skill" [(ngModel)]="transformer.skill" min="1" max="10">
+  </div>
+
+  <button type="submit" [disabled]="!transformerForm.form.valid"
+          mat-raised-button>Add Transformer
+  </button>
+
+</form>

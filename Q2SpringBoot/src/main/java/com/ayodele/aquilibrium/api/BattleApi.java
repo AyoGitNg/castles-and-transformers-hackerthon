@@ -4,15 +4,13 @@ import com.ayodele.aquilibrium.model.BattleResult;
 import com.ayodele.aquilibrium.model.TransformersParams;
 import com.ayodele.aquilibrium.service.Battle;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping(path = "/api")
 public class BattleApi {
 
+    @CrossOrigin(origins = "http://localhost:4200")
     @PostMapping(path = "/battle")
     public ResponseEntity<?> getBattleResult(@RequestBody TransformersParams transformersParams) {
         Battle battle = new Battle(transformersParams.getDecepticons(),transformersParams.getAutoBots());
