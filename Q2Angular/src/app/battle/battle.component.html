@@ -1,7 +1,7 @@
 <div>
 
   <p>Decepticons</p>
-  <div *ngFor="let decepticon of decepticons">
+  <div *ngFor="let decepticon of currentDecepticons">
     <div>
       <p>{{decepticon.name}} || {{decepticon.courage}} || {{decepticon.strength}}</p>
     </div>
@@ -10,7 +10,7 @@
   <button (click)="newDeception()">Add new Deception</button>
 
   <p>AutoBot</p>
-  <div *ngFor="let autobot of autoBots">
+  <div *ngFor="let autobot of currentAutoBots">
     <div>
       <p>{{autobot.name}} || {{autobot.courage}} || {{autobot.strength}}</p>
     </div>

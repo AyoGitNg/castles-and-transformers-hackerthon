@@ -9,8 +9,8 @@ import {ApiService} from '../api-service';
   styleUrls: ['./battle.component.css']
 })
 export class BattleComponent implements OnInit {
-  decepticons;
-  autoBots;
+  currentDecepticons;
+  currentAutoBots;
 
   numberOfBattles: number;
   winnerTeam: string;
@@ -24,6 +24,8 @@ export class BattleComponent implements OnInit {
 
   ngOnInit(): void {
     console.log(decepticons, autoBots);
+    this.currentDecepticons = [...decepticons];
+    this.currentAutoBots = [...autoBots];
   }
 
 
